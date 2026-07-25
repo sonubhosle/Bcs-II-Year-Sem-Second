@@ -1,0 +1,25 @@
+.margin{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    text-align: center;
+   margin: 30px auto;
+   color: azure;
+   display: block;
+   align-items: center;
+   justify-content: center;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+.block{
+    width: 25%;
+    background-color: brown;
+    height: 200px;
+}
