@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .boxes{
+        width: 100%;
+        display: flex;  /* We Change  Default block to Flex */
+        gap: 30px;   /* Here Gap Property is work*/
+    }
+    .boxes .box{
+        background-color: blueviolet;
+        width: 300px;
+        height: 200px;
+          
+    }
+</style>
+<body>
+    <div class="boxes">
+        <div class="box">Div tag</div>
+        <div class="box">Div tag</div>
+        <div class="box">Div tag</div>
+        <div class="box">Div tag</div>
+    </div>
+</body>
+
+</html>

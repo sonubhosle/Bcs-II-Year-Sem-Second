@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0px 20px;
+}
+
+header  > h1{
+    color: white;
+          font-family: "Cedarville Cursive", cursive;
+
+}
+
+header nav{
+    display: flex;
+    gap:20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+}
