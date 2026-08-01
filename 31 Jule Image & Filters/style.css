@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: teal;
+    padding: 10px;
+}
+
+.gallary {
+    display: flex;
+    width: 100px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallary img {
+    width: 250px;
+
+}
+
+.gray {
+    filter: grayscale();
+}
+
+.bright {
+    filter: brightness(3);
+}
+
+.cont {
+    filter: contrast(10);
+}
+
+.blur {
+    filter: blur(10px);
+}
+
+.opacity {
+    filter: opacity(0.5);
+}
