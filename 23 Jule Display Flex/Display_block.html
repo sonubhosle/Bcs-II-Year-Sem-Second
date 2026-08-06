@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .boxes{
+        width: 100%;
+        display: block;  /* Default block*/
+        gap: 30px;   /* Gap Property is not work when element is in display block */
+    }
+    .boxes .box{
+        background-color: blueviolet;
+        width: 300px;
+        height: 200px;
+          
+    }
+</style>
+<body>
+    <div class="boxes">
+        <div class="box">Div tag is a block level element & Default is display:block</div>
+        <div class="box">Div tag is a block level element & Default is display:block</div>
+        <div class="box">Div tag is a block level element & Default is display:block</div>
+        <div class="box">Div tag is a block level element & Default is display:block</div>
+    </div>
+</body>
+
+</html>
