@@ -1,0 +1,227 @@
+/* ======================================
+   CSS Box Shadow Examples
+   ====================================== */
+
+
+/* Page Styling */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* ======================================
+   Container
+   display:flex -> Keep all boxes in one row
+   gap -> Space between boxes
+   flex-wrap -> Move boxes to next line on small screens
+   ====================================== */
+
+.shadows{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* ======================================
+   Common Box Design
+   All boxes share these styles
+   ====================================== */
+
+.box{
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ======================================
+   1. Shadow on All Sides
+   box-shadow:
+   Horizontal  Vertical  Blur  Spread  Color
+        0px       0px     25px   5px    Black
+   ====================================== */
+
+.all-shadow{
+    background-color: #FFD54F;   /* Yellow */
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);
+}
+
+
+/* ======================================
+   2. Shadow on Left Side
+   Negative Horizontal Value
+   ====================================== */
+
+.left-shadow{
+    background-color: #81C784;   /* Green */
+    box-shadow: -15px 0px 25px 5px rgba(0,0,0,0.5);
+}
+
+
+/* ======================================
+   3. Shadow on Right Side
+   Positive Horizontal Value
+   ====================================== */
+
+.right-shadow{
+    background-color: #64B5F6;   /* Blue */
+    box-shadow: 15px 0px 25px 5px rgba(0,0,0,0.5);
+}
+
+
+/* ======================================
+   4. Shadow on Top Side
+   Negative Vertical Value
+   ====================================== */
+
+.top-shadow{
+    background-color: #FF8A65;   /* Orange */
+    box-shadow: 0px -15px 25px 5px rgba(0,0,0,0.5);
+}
+
+
+/* ======================================
+   5. Shadow on Bottom Side
+   Positive Vertical Value
+   ====================================== */
+
+.bottom-shadow{
+    background-color: #BA68C8;   /* Purple */
+    box-shadow: 0px 15px 25px 5px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+/* =====================================
+   Button Container
+===================================== */
+
+.button-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+/* =====================================
+   Common Button Style
+===================================== */
+
+.btn{
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* =====================================
+   1. Blue Shadow Button
+===================================== */
+
+.btn1{
+    background: #2196F3;
+    box-shadow: 0px 5px 12px rgba(33,150,243,0.5);
+}
+
+.btn1:hover{
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   2. Green Shadow Button
+===================================== */
+
+.btn2{
+    background: #4CAF50;
+    box-shadow: 0px 6px 15px rgba(76,175,80,0.5);
+}
+
+.btn2:hover{
+    box-shadow: 0px 10px 20px rgba(76,175,80,0.7);
+}
+
+
+/* =====================================
+   3. Red Glow Button
+===================================== */
+
+.btn3{
+    background: #F44336;
+    box-shadow: 0px 0px 15px rgba(244,67,54,0.7);
+}
+
+.btn3:hover{
+    box-shadow: 0px 0px 25px rgba(244,67,54,1);
+}
+
+
+/* =====================================
+   4. Purple Lift Button
+===================================== */
+
+.btn4{
+    background: #9C27B0;
+    box-shadow: 0px 8px 15px rgba(156,39,176,0.4);
+}
+
+.btn4:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(156,39,176,0.6);
+}
+
+
+/* =====================================
+   5. Orange Press Button
+===================================== */
+
+.btn5{
+    background: #FF9800;
+    box-shadow: 0px 6px 0px #d67d00;
+}
+
+.btn5:active{
+    transform: translateY(6px);
+    box-shadow: none;
+}
+
+
+/* =====================================
+   6. Dark Neumorphism Button
+===================================== */
+
+.btn6{
+    background: #333;
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.4),
+               -4px -4px 8px rgba(255,255,255,0.1);
+}
+
+.btn6:hover{
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.5),
+                inset -4px -4px 8px rgba(255,255,255,0.1);
+}
