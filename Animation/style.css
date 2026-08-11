@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    height: 100%;
+   padding: 20px;
+    font-family: Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+/* Container and shared item layout */
+.animations{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.anim-item{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Background Color Change */
+
+.bgColorChange{
+    background-color: #9c9b9b;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #9c9b9b;
+    }
+    25% {
+        background-color: #ff0000;
+    }
+    50% {
+        background-color: #00ff00;
+    }
+    75% {
+        background-color: #0000ff;
+    }
+    100% {
+        background-color: #9c9b9b;
+    }
+}
+
+/* Move */
+.move{
+    background-color: #00e000;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: move 2s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(100px);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    75% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Scale */
+.scale{
+    background-color: #ff00ff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scale 2s infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+/* Rotate */
+.rotate{
+    background-color: #0000ff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Text Color Change */
+.textChange{
+    color: #000000;
+    font-size: 24px;
+    animation: textChange 2s infinite;
+}
+
+@keyframes textChange {
+    0% {
+        color: #000000;
+    }
+    25% {
+        color: #ff0000;
+    }
+    50% {
+        color: #00ff00;
+    }
+    75% {
+        color: #0000ff;
+    }
+    100% {
+        color: #000000;
+    }
+}
